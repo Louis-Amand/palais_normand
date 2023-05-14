@@ -1,0 +1,347 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import "navbar.css";
+@import "footer.css";
+
+body,
+html {
+    font-family: "Roboto", sans-serif;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.bg-container {
+    position: relative;
+    display: inline-block;
+    background-size: cover;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/background.jpg");
+}
+
+.bg-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.bg-text {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 90vh;
+    margin-left: 3em;
+
+}
+
+.bg-text h1 {
+    margin: 0.2em;
+    padding: 0;
+    color: white;
+    font-size: 6em;
+    letter-spacing: 2px;
+}
+
+@media screen and (max-width: 600px) {
+    .bg-text h1 {
+        font-size: 2.5em;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .bg-text {
+        margin: 0;
+    }
+}
+
+.discover-normandy {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.discover-normandy h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 2em;
+    margin-top: 2em;
+    color: #725305c8;
+}
+
+.section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5em;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.section p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+.section img {
+    width: 90%;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+.section.reverse {
+    direction: rtl;
+}
+
+@media screen and (max-width: 768px) {
+    .section {
+        grid-template-columns: 1fr;
+    }
+
+    .section.reverse {
+        direction: ltr;
+    }
+}
+
+.palais {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+
+.contact-us {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 3em;
+    padding: 20px;
+    text-align: center;
+}
+
+.contact-us h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+    margin-top: 2em;
+    color: #725305c8;
+}
+
+.contact-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    align-items: start;
+}
+
+.contact-info div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-info i {
+    color: #333;
+    font-size: 24px;
+}
+
+.center {
+
+    justify-content: center;
+}
+
+.bg-container-visiter h2 {
+    text-align: center;
+    margin: 0.2em;
+    padding: 0;
+    color: white;
+    font-size: 2em;
+    letter-spacing: 2px;
+}
+
+.bg-container-visiter .bg-text {
+    width: 70%;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bg-container-visiter p {
+    text-align: center;
+    margin: 0.2em;
+    padding: 0;
+    color: white;
+    font-size: 1em;
+    letter-spacing: 2px;
+    margin-top: 1.5em;
+}
+
+
+.bg-container-visiter {
+    position: relative;
+    display: inline-block;
+    background-size: cover;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/benedictine.jpg");
+}
+
+.bg-container-visiter::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.tour-description {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    font-size: 1em;
+    color: #333;
+    line-height: 1.5;
+}
+
+.tour-description h1 {
+    text-align: center;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+.tour-description p {
+    margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    .tour-description {
+        font-size: 1.1em;
+    }
+
+    .tour-description h1 {
+        font-size: 2em;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .tour-description {
+        font-size: 1.2em;
+    }
+
+    .tour-description h1 {
+        font-size: 2.5em;
+    }
+}
+
+.reservation {
+    margin-top: 2em;
+    justify-content: center;
+    text-align: center;
+}
+
+#reserve-btn {
+    padding: 10px 20px;
+    background-color: #725305c8;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+#reserve-btn:hover {
+    background-color: #433206c8;
+}
+
+.current-exhibition {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+    width: 85%;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.current-exhibition img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+.exhibition-text {
+    max-width: 800px;
+}
+
+@media (min-width: 768px) {
+    .current-exhibition {
+        flex-direction: row;
+        text-align: left;
+        justify-content: space-between;
+    }
+
+    .current-exhibition img {
+        margin-right: 20px;
+        margin-left: 2em;
+    }
+
+    .exhibition-text {
+        flex: 1;
+    }
+}
+
+.sec {
+    padding: 0;
+}
+
+.nav-bottom {
+    color: #725305c8;
+    padding: 0.5em;
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+
+}
+
+.nav-bottom .button-1 {
+    padding: 10px 20px;
+    background-color: #0d3e4ec8;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1em;
+    text-decoration: none;
+}
+
+.nav-bottom .button-2 {
+    padding: 10px 20px;
+    background-color: #b73a2fc8;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1em;
+    text-decoration: none;
+
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta charset="UTF-8">
+    <title>Palais Normand</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="script.js"></script>
+    <link rel="icon" href="img/logo.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+
+
+</head>
+
+<body>
+    <header>
+        <div class="navbar" id="myNavbar">
+            <a href="index.html" class="brand-title">Palais Normand</a>
+            <div class="navbar-right">
+                <a href="index.html">Accueil</a>
+                <a href="visiter.html">Visiter</a>
+                <a href="moment.html">En ce moment</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </header>
+
+
+    <div class="bg-container-visiter">
+        <div class="bg-text">
+            <h2>Réservez vite votre visite au Palais Normand</h2>
+            <p>
+                Préparez-vous à voyager dans le temps et à découvrir l'histoire fascinante de la Normandie. Au Palais
+                Normand, chaque pièce, chaque objet raconte une histoire qui vous plongera dans le passé.
+            </p>
+            <div class="reservation">
+                <button id="reserve-btn">Réserver les billets</button>
+            </div>
+
+        </div>
+    </div>
+    <div class="tour-description">
+        <h1>Visite Guidée du Palais Normand</h1>
+        <p>
+            Rejoignez-nous pour une visite guidée inoubliable du Palais Normand, un musée unique dédié à l'histoire
+            captivante de la Normandie. Cette visite de deux heures vous plongera dans les moments les plus marquants de
+            la région, du règne des Vikings à la Seconde Guerre mondiale.
+        </p>
+        <p>
+            Notre voyage commence avec l'arrivée des Vikings en Normandie. Vous découvrirez comment ces explorateurs
+            robustes ont façonné l'identité de la région et jeté les bases du duché de Normandie.
+        </p>
+        <p>
+            Ensuite, nous traverserons l'ère de Guillaume le Conquérant, le duc de Normandie qui a changé le cours de
+            l'histoire en envahissant l'Angleterre en 1066. Vous verrez des répliques d'armes, des manuscrits anciens et
+            des illustrations étonnantes qui donnent vie à cette période tumultueuse.
+        </p>
+        <p>
+            Enfin, nous arriverons en 1944, lorsque les plages de Normandie ont été le théâtre du plus grand
+            débarquement amphibie de l'histoire. Vous verrez des photos d'époque, entendrez des témoignages poignants et
+            découvrirez des objets authentiques de cette époque.
+        </p>
+        <p>
+            Nos guides experts sont passionnés par l'histoire de la Normandie et sont impatients de partager leurs
+            connaissances avec vous. Ils répondront à toutes vos questions et vous aideront à comprendre l'importance
+            des événements qui se sont déroulés dans cette région fascinante.
+        </p>
+        <p>
+            La visite guidée du Palais Normand est une expérience éducative et divertissante pour tous les âges.
+            Réservez dès maintenant votre place et préparez-vous à un voyage dans le temps !
+        </p>
+    </div>
+
+    <footer>
+        <p>Palais Normand - Mesnil-en-Ouche - Hildevert Fürstenberg Davaine - contact@palais-normand.fr</p>
+    </footer>
+
+</body>
+
+</html>
+
+<script>
+    document.getElementById('reserve-btn').addEventListener('click', function () {
+        alert('La saison touristique n’est pas ouverte.');
+    });
+
+</script>

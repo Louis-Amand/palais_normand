@@ -1,0 +1,70 @@
+.navbar {
+    overflow: hidden;
+    background-color: white;
+    border-bottom: 5px solid #725305c8;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #725305c8;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+
+}
+
+.navbar .brand-title {
+    font-size: 30px;
+    font-family: 'Playfair Display', serif;
+    line-height: 1.2;
+    letter-spacing: 2px;
+}
+
+.navbar-right {
+    float: right;
+    margin-top: 0.3em;
+    font-weight: bold;
+}
+
+.navbar a.icon {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+
+    .navbar-right a {
+        display: none;
+    }
+
+    .navbar a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .navbar.responsive {
+        position: relative;
+    }
+
+    .navbar.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .navbar.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    .navbar.responsive .navbar-right a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
